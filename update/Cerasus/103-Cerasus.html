@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SkipubTube</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #131313;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #888; /* Texte en gris clair */
+    }
+
+    .popup-container {
+      background-color: #131313;
+      width: 85%;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      opacity: 0; /* Initialement invisible */
+      animation: fadeIn 0.5s ease-in-out 0.5s forwards; /* Animation d'affichage */
+    }
+
+    .icon {
+      width: 150px;
+      height: 150px;
+      background-image: url('update-icon.png');
+      background-size: cover;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #fff; /* Titre en blanc */
+      margin: 5px 0;
+    }
+
+    .subtitle {
+      color: #fff; /* Texte en blanc */
+      margin-top: 5px;
+    }
+
+    .popup-button {
+      background-color: #1a1bda;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 0;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+      color: #fff; /* Texte en blanc */
+      font-size: 15px;
+    }
+
+    .popup-button:hover {
+      background-color: #2a2a2a;
+    }
+
+    .new-features-button {
+      background-color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 0;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+      color: #1a1bda; /* Texte en bleu */
+      font-size: 15px;
+    }
+
+    .new-features-button:hover {
+      background-color: #eee;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="popup-container">
+    <div class="icon"></div>
+    <h1>Version à jour</h1>
+    <p class="subtitle" style="color: #888;">La version 1.0.3 Cerasus est la dernière disponible</p>
+    <button class="popup-button" onclick="location.reload()">Vérifier</button>
+    <button class="new-features-button" onclick="window.location.href='changelog-103-cerasus.html'">Voir les nouveautés</button>
+  </div>
+</body>
+</html>

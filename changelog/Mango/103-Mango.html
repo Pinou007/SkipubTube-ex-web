@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SkipubTube</title>
+  <meta charset="UTF-8">
+  <style>
+    /* Styles pour la popup */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #131313;
+      color: #888; /* Texte en gris clair */
+    }
+    
+    .popup-container {
+      background-color: #131313;   
+      width: 85%;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 0; /* Initialement invisible */
+      animation: fadeIn 0.5s ease-in-out 0.5s forwards; /* Animation d'affichage */
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    
+    h1 {
+      font-size: 24px;
+      color: #fff; /* Titre en blanc */
+      text-align: center; /* Titre au milieu */
+    }
+    
+    .created-by {
+      color: #fff; /* Texte en blanc */
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      width: 28px;
+      height: 28px;
+      margin-left: 10px; /* Flèche alignée à droite */
+    }
+
+    .card {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+
+    .popup-button {
+      background-color: transparent;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 0;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      color: #888; /* Texte en gris clair */
+      font-size: 15px;
+    }
+    
+    .popup-button:hover {
+      background-color: #2a2a2a;
+      color: #fff;
+    }
+
+    .hidden-text {
+      display: none;
+      color: #888; /* Texte en gris clair */
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="popup-container">
+    <h1>Corection de bug</h1>
+    
+   <div class="ok" style="text-align: left"> 
+    
+<p>
+  <strong>1. Suppression des publicités intrusives :</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;Les publicités qui apparaissaient à côté de la vidéo et sur la page d'accueil ont été éliminées. Cela garantit une expérience utilisateur plus fluide et sans interruption.
+</p>
+
+<p>
+  <strong>2. Compatibilité retrouvée avec les publicités sur YouTube :</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;L'extension a été mise à jour pour s'adapter aux modifications de l'interface publicitaire de YouTube. Désormais, elle fonctionne correctement même lorsque YouTube modifie son interface.
+</p>
+
+<p>
+  <strong>3. Correction de bugs :</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;Les problèmes signalés précédemment ont été résolus, assurant ainsi un fonctionnement plus stable et fiable de l'extension.
+</p>
+
+<p>
+  <strong>4. Optimisations de performance :</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;Des améliorations ont été apportées pour optimiser les performances de l'extension, garantissant une utilisation efficace des ressources tout en offrant une expérience utilisateur rapide.
+</p>
+    
+    <p>Merci d'utiliser mon extension.</p>
+    <p>1.0.3 Mango</p>
+    
+
+  <script>
+    // JavaScript pour gérer l'affichage/masquage du texte caché
+    const buttons = document.querySelectorAll(".popup-button");
+    buttons.forEach(button => {
+      const hiddenText = button.nextElementSibling;
+      button.addEventListener("click", () => {
+        if (hiddenText.style.display === "block") {
+          hiddenText.style.display = "none";
+        } else {
+          hiddenText.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
